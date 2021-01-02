@@ -45,7 +45,7 @@ class MediaRecorder {
     this.state = 'inactive'
 
     this.em = document.createDocumentFragment()
-    this.encoder = MediaRecorder.encoder
+    this.encoder = MediaRecorder.encoder();
 
     let recorder = this
     this.encoder.addEventListener('message', e => {
